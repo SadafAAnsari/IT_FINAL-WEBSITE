@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <section id="gallery">
+        <div class="container">
+            <h2>3D Image Gallery</h2>
+            <div class="gallery-slider">
+                <div class="carousel">
+                    <figure class="slide"><img src="polo1.jpg" alt="Gallery Image 1"></figure>
+                    <figure class="slide"><img src="polo2.jpg" alt="Gallery Image 2"></figure>
+                    <figure class="slide"><img src="polo3.jpeg" alt="Gallery Image 3"></figure>
+                    <figure class="slide"><img src="polo4.jpg" alt="Gallery Image 4"></figure>
+                    <figure class="slide"><img src="polo5.jpg" alt="Gallery Image 5"></figure>
+                    <figure class="slide"><img src="https://via.placeholder.com/300" alt="Gallery Image 6"></figure>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <p>&copy; Brand Express PVT. LTD. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </section>
+    <script src="gallery.js"></script>
+</body>
+</html>

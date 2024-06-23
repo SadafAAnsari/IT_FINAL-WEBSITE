@@ -1,0 +1,135 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #202020; /* Darker background for contrast */
+    color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: #2a2a2a; /* Subtle difference from body for section distinction */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adding depth */
+    border-radius: 10px;
+}
+
+/* Gallery section styling */
+#gallery {
+    padding: 50px 20px;
+    background: linear-gradient(145deg, #1e1e1e, #333333); /* Gradient background for depth */
+    border-radius: 10px;
+}
+
+#gallery h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ffcb05;
+    text-transform: uppercase; /* Adding a modern, professional look */
+    letter-spacing: 2px;
+}
+
+/* Gallery slider styling */
+.gallery-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    perspective: 1000px; /* Perspective for 3D effect */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow for a more pronounced 3D effect */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d; /* Preserve 3D effect */
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 3D-like shadow */
+}
+
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 203, 5, 0.8); /* Brand accent color */
+    color: #202020;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 203, 5, 1);
+    transform: scale(1.1); /* Slightly larger on hover */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Footer styling */
+footer {
+    background: #1e3c72; /* Keeping a deep, elegant color */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3); /* Adding depth to the footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Button styles */
+button, .btn {
+    background-color: #ffcb05;
+    color: #202020;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+button:hover, .btn:hover {
+    background-color: #ffda47;
+    transform: scale(1.05);
+}
+
+/* Link styles */
+a {
+    color: #ffcb05;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffda47;
+}
