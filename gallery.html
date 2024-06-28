@@ -10,17 +10,17 @@
     <section id="gallery">
         <div class="container">
             <h2>3D Image Gallery</h2>
-            <div class="gallery-slider">
-                <div class="carousel">
-                    <figure class="slide"><img src="polo1.jpg" alt="Gallery Image 1"></figure>
-                    <figure class="slide"><img src="polo2.jpg" alt="Gallery Image 2"></figure>
-                    <figure class="slide"><img src="polo3.jpeg" alt="Gallery Image 3"></figure>
-                    <figure class="slide"><img src="polo4.jpg" alt="Gallery Image 4"></figure>
-                    <figure class="slide"><img src="polo5.jpg" alt="Gallery Image 5"></figure>
-                    <figure class="slide"><img src="https://via.placeholder.com/300" alt="Gallery Image 6"></figure>
+            <div class="gallery-slider" aria-live="polite">
+                <div class="carousel" role="region" aria-label="Image carousel">
+                    <figure class="slide" aria-hidden="true"><img src="polo1.jpg" alt="Stylish Polo Shirt"></figure>
+                    <figure class="slide" aria-hidden="true"><img src="polo2.jpg" alt="Elegant Polo Shirt"></figure>
+                    <figure class="slide" aria-hidden="true"><img src="polo3.jpeg" alt="Casual Polo Shirt"></figure>
+                    <figure class="slide" aria-hidden="true"><img src="polo4.jpg" alt="Classic Polo Shirt"></figure>
+                    <figure class="slide" aria-hidden="true"><img src="polo5.jpg" alt="Modern Polo Shirt"></figure>
+                    <figure class="slide" aria-hidden="true"><img src="https://via.placeholder.com/300" alt="Placeholder Image"></figure>
                 </div>
-                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                <button class="prev" aria-label="Previous slide" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" aria-label="Next slide" onclick="moveSlide(1)">&#10095;</button>
             </div>
         </div>
         <footer>
