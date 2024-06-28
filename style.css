@@ -1,47 +1,65 @@
-/* Basic reset */
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
 body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
-    line-height: 1.6;
-    overflow-x: hidden;
 }
 
-/* Rotating favicon */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 4em;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    color: #fff;
+}
+
+h2 span {
+    font-size: 0.5em;
+    font-weight: 400;
+    display: block;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Rotating Logo */
 .rotating {
     animation: rotate 4s linear infinite;
 }
 
-/* Define the keyframes for the rotating animation */
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
-/* Main background image styling */
+/* Main Background and Overlay */
 .main {
     background: url('bg1.jpeg') no-repeat center center/cover;
     position: relative;
     min-height: 100vh;
-    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    text-align: center;
 }
 
-/* Add a dark overlay for better text visibility */
 .main::before {
     content: '';
     position: absolute;
@@ -49,8 +67,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
+}
+
+.navbar, .content, .footer {
+    position: relative;
+    z-index: 2;
 }
 
 /* Navigation Bar */
@@ -63,30 +86,26 @@ body {
     background: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 10;
+    z-index: 1000;
 }
 
-.logo img {
-    width: 50px;
+.navbar .logo img {
+    width: 100px;
     height: auto;
-    animation: none;
+    animation: none; /* Disable logo rotation in the navbar */
 }
 
 .menu ul {
-    list-style: none;
     display: flex;
     gap: 20px;
 }
 
 .menu ul li a {
     font-size: 1em;
-    font-weight: 500;
     color: #fff;
     padding: 5px 10px;
     transition: background 0.3s, color 0.3s;
     border-radius: 5px;
-    text-decoration: none;
 }
 
 .menu ul li a:hover {
@@ -104,7 +123,6 @@ body {
     border: none;
     border-radius: 5px;
     outline: none;
-    width: 150px;
 }
 
 .btn {
@@ -116,9 +134,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .btn:hover {
@@ -126,38 +141,22 @@ body {
     color: #fff;
 }
 
-/* Content */
+.btn i {
+    font-size: 1.2em;
+}
+
+/* Content Styling */
 .content {
     max-width: 800px;
-    margin: 0 auto;
     text-align: center;
     z-index: 2;
-    padding: 20px;
 }
 
-.content h2 {
-    font-size: 4em;
-    margin: 0 0 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 2px;
-}
-
-.content h2 span {
-    font-size: 0.5em;
-    font-weight: 400;
-    display: block;
-    letter-spacing: 1px;
-}
-
-.content p {
-    font-size: 1.2em;
-    margin: 0 0 20px;
-    line-height: 1.5;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    border-radius: 5px;
+.content .par {
+    color: #ddd;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
 }
 
 .cn a {
@@ -169,7 +168,6 @@ body {
     font-weight: 500;
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
-    text-decoration: none;
 }
 
 .cn a:hover {
@@ -177,7 +175,7 @@ body {
     color: #fff;
 }
 
-/* Form */
+/* Form Styling */
 .form {
     max-width: 300px;
     margin: 20px auto 0;
@@ -187,7 +185,6 @@ body {
     border-radius: 10px;
     color: #000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 2;
 }
 
 .form h3 {
@@ -201,7 +198,7 @@ body {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 5px;
     outline: none;
 }
@@ -214,7 +211,6 @@ body {
     color: #fff;
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
-    text-decoration: none;
 }
 
 .form .btnn a:hover {
@@ -227,20 +223,38 @@ body {
     text-decoration: underline;
 }
 
+/* Scroll-to-Top Button */
+.scroll-top-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.scroll-top-button.visible {
+    opacity: 1;
+}
+
 /* Footer */
 footer {
-    background: #333;
+    background: #000;
     color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    z-index: 2;
 }
 
 footer .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
