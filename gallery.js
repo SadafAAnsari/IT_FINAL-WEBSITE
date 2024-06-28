@@ -1,25 +1,24 @@
-let currentIndex = 0;
+let currentSlide = 0;
 
 function moveSlide(direction) {
-    const carousel = document.querySelector('.carousel');
     const slides = document.querySelectorAll('.slide');
     const totalSlides = slides.length;
 
-    // Calculate the new index
-    currentIndex += direction;
+   
+    slides[currentSlide].setAttribute('aria-hidden', 'true');
 
-    // Loop back to the start or end if necessary
-    if (currentIndex < 0) {
-        currentIndex = totalSlides - 1;
-    } else if (currentIndex >= totalSlides) {
-        currentIndex = 0;
-    }
+    
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
 
-    // Update the transform property for the 3D effect
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+ 
+    slides[currentSlide].setAttribute('aria-hidden', 'false');
+
+    
+    const carousel = document.querySelector('.carousel');
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
 
-// Auto-slide every 5 seconds
-setInterval(() => {
-    moveSlide(1);
-}, 5000);
+
+document.addEventListener('DOMContentLoaded', () => {
+    moveSlide(0);
+});
