@@ -6,82 +6,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: aqua;
-            color: #fff;
-        }
-        
-        #contact {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            width: 100%;
-            max-width: 600px;
-            text-align: center;
-        }
-        
-        h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            font-family: 'Georgia', serif;
-            color: #f8f8f8;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            outline: none;
-            font-size: 1em;
-            margin-bottom: 10px;
-        }
-        
-        input {
-            height: 40px;
-        }
-        
-        textarea {
-            resize: none;
-        }
-        
-        button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            background-color: #ffd700;
-            color: #000;
-            font-size: 1.2em;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-        
-        button:hover {
-            background-color: #ffcc00;
-            transform: scale(1.05);
-        }
+        /* Your existing styles here */
     </style>
 </head>
 <body>
@@ -98,20 +23,46 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <script>
-                    function showPopup() {
-                        alert("Your message has been submitted");
-                    }
-                </script>
-                <button type="submit" onclick="showPopup()">Send</button>
+                <button type="submit">Send</button>
             </form>
+            
+            <!-- Office Address and Contact Information -->
+            <div class="contact-info">
+                <h3>Office Address</h3>
+                <p>Influence Fashion Pvt. Ltd.<br>
+                   123 Fashion Street, Kathmandu, Nepal</p>
+                
+                <h3>Phone</h3>
+                <p>+977 123 456 789</p>
+                
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                   Saturday: 10:00 AM - 4:00 PM<br>
+                   Sunday: Closed</p>
+                
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+                
+                <!-- Google Map Embed -->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.493964283956!2d85.31039741506567!3d27.717245732669525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb194de1c18f2f%3A0x1b91b87ea0e5bce1!2sFashion%20Street%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2suk!4v1624856194330!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
         </div>
         <footer>
             <div class="container">
-                <p>&copy; 2024 Brand Express PVT. LTD. All Rights Reserved.</p>
+                <p>&copy; 2024 Influence Fashion Pvt. Ltd. All Rights Reserved.</p>
             </div>
         </footer>
     </section>
