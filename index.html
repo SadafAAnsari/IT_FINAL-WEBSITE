@@ -6,252 +6,41 @@
     <title>Influence - Fashion Redefined</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="ICON.png" class="rotating">
-    <style>
-        /* Define the keyframes for the rotating animation */
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* Apply the animation to the rotating class */
-        .rotating {
-            animation: rotate 4s linear infinite;
-        }
-
-        /* Main background image styling */
-        .main {
-            background: url('bg1.jpeg') no-repeat center center/cover;
-            position: relative;
-            min-height: 100vh;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .navbar, .content, .footer {
-            position: relative;
-            z-index: 2;
-        }
-
-        /* Add a dark overlay for better text visibility */
-        .main::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-            z-index: 1;
-        }
-
-        /* Navigation Bar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-        }
-
-        .logo img {
-            width: 100px;
-            height: auto;
-            animation: none; /* Disable logo rotation in the navbar */
-        }
-
-        .menu ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-            padding: 0;
-            margin: 0;
-        }
-
-        .menu ul li a {
-            font-size: 1em;
-            font-weight: 500;
-            color: #fff;
-            padding: 5px 10px;
-            transition: background 0.3s, color 0.3s;
-            border-radius: 5px;
-        }
-
-        .menu ul li a:hover {
-            background: #fff;
-            color: #000;
-        }
-
-        .search {
-            display: flex;
-            align-items: center;
-        }
-
-        .srch {
-            padding: 5px;
-            border: none;
-            border-radius: 5px;
-            outline: none;
-        }
-
-        .btn {
-            padding: 5px 10px;
-            margin-left: 10px;
-            background: #fff;
-            color: #000;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        .btn:hover {
-            background: #000;
-            color: #fff;
-        }
-
-        /* Content */
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            z-index: 2;
-        }
-
-        .content h2 {
-            font-size: 4em;
-            margin: 0 0 20px;
-            text-transform: uppercase;
-            font-weight: 700;
-            line-height: 1.2;
-        }
-
-        .content h2 span {
-            font-size: 0.5em;
-            font-weight: 400;
-            display: block;
-        }
-
-        .content p {
-            font-size: 1.2em;
-            margin: 0 0 20px;
-            line-height: 1.5;
-        }
-
-        .content .cn a {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #fff;
-            color: #000;
-            text-transform: uppercase;
-            font-weight: 500;
-            border-radius: 5px;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        .content .cn a:hover {
-            background: #000;
-            color: #fff;
-        }
-
-        /* Form */
-        .form {
-            max-width: 300px;
-            margin: 0 auto;
-            text-align: left;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            color: #000;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .form h3 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .form input[type="email"],
-        .form input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: none;
-            border-radius: 5px;
-            outline: none;
-        }
-
-        .form .btnn a {
-            display: block;
-            text-align: center;
-            padding: 10px 0;
-            background: #000;
-            color: #fff;
-            border-radius: 5px;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        .form .btnn a:hover {
-            background: #fff;
-            color: #000;
-        }
-
-        .form .link a {
-            color: #000;
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            z-index: 2;
-        }
-    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="main">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo"><img src="ICON.png" alt="Logo"></h2>
+                <h2 class="logo"><img src="ICON.png" alt="Influence Logo"></h2>
             </div>
             <div class="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="service.html" target="_blank">Service</a></li>
-                    <li><a href="gallery.html" target="_blank">Gallery</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="search">
                 <input class="srch" type="search" placeholder="Search Here">
-                <a href="#"><button class="btn">Search</button></a>
+                <button class="btn"><i class="fas fa-search"></i></button>
             </div>
         </div>
         <div class="content">
             <h2>Influence<br><span>Fashion Redefined</span></h2>
             <p class="par">
-                "Influence," established in 2022 by <strong>Javed Hasan</strong>, is a trailblazing clothing brand that encapsulates the spirit of modern fashion with a distinctive touch. Founded in Nepal, Influence seeks to blend the rich cultural heritage of the region with contemporary design elements, offering a unique array of apparel that caters to the fashion-forward individual. The brand is dedicated to sustainability and quality, ensuring that each piece is crafted with meticulous attention to detail and ethical practices. From chic casual wear to bold statement pieces, Influence stands out for its innovative approach to style, making it a go-to choice for those who wish to make a lasting impression. Under the visionary leadership of Javed Hasan, Influence continues to redefine fashion by merging traditional aesthetics with modern trends, resonating with customers who value both style and substance.
+                "Influence," established in 2022 by <strong>Javed Hasan</strong>, is a trailblazing clothing brand that encapsulates the spirit of modern fashion with a distinctive touch. Founded in Nepal, Influence seeks to blend the rich cultural heritage of the region with contemporary design elements, offering a unique array of apparel that caters to the fashion-forward individual.
             </p>
-            <button class="cn"><a href="signup.html" target="_blank">Join Us</a></button>
+            <button class="cn"><a href="signup.html">Join Us</a></button>
             <div class="form">
                 <h3>Login Here</h3>
-                <input type="email" name="email" placeholder="Enter Email Here">
-                <input type="password" placeholder="Enter Password Here">
+                <input type="email" name="email" placeholder="Enter Email Here" required>
+                <input type="password" name="password" placeholder="Enter Password Here" required>
                 <button class="btnn"><a href="#">Login</a></button>
-                <p class="link">Don't have an account?<br><a href="signup.html" target="_blank">Sign up here.</a></p>
+                <p class="link">Don't have an account?<br><a href="signup.html">Sign up here.</a></p>
             </div>
         </div>
     </div>
