@@ -1,186 +1,141 @@
-/* General styling */
+/* Reset and general styles */
 body {
-    font-family: 'Poppins', Arial, sans-serif;
-    background: linear-gradient(to right, #2b5876, #4e4376);
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: aqua; /* Adjust background color as needed */
+    color: #fff; /* Text color for contrast */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form styles */
+#contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    color: #333;
-    background-attachment: fixed;
-    overflow: hidden;
+    min-height: 100vh;
+    background-color: #f8f8f8; /* Light background for form section */
 }
 
-/* Background overlay for enhanced contrast */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://source.unsplash.com/1600x900/?business,office') no-repeat center center fixed;
-    background-size: cover;
-    z-index: -1;
-    filter: blur(8px);
-    opacity: 0.7;
-}
-
-/* Contact section */
-#contact {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 50px;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 600px;
-    backdrop-filter: blur(15px);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-#contact:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-}
-
-/* Container styling */
-.container {
-    margin: 0 auto;
-}
-
-/* Heading */
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #ff5722;  /* Vibrant orange for attention */
-    font-family: 'Playfair Display', serif;
-    transition: color 0.3s;
-}
-
-h2:hover {
-    color: #d84315;
-}
-
-/* Intro text */
-.intro-text {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    color: #666;
-}
-
-/* Form styling */
-#contact-form {
-    background-color: #fff;
+.container form {
+    background: rgba(0, 0, 0, 0.7);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: left; /* Form content alignment */
+}
+
+form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    color: #f8f8f8; /* Heading color */
 }
 
 .form-group {
     margin-bottom: 20px;
-    text-align: left;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-weight: bold;
-    color: #333;
+    color: #ffd700; /* Label color */
 }
 
-input,
-textarea {
-    width: calc(100% - 20px);
-    padding: 12px;
-    border: 1px solid #ddd;
+input, textarea {
+    width: 100%;
+    padding: 10px;
     border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 1em;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    background-color: #f9f9f9;
-}
-
-input:focus,
-textarea:focus {
-    border-color: #ff5722;
-    box-shadow: 0 0 10px rgba(255, 87, 34, 0.3);
+    border: none;
     outline: none;
+    font-size: 1em;
+    margin-bottom: 10px;
 }
 
-/* Button styling */
-button[type="submit"] {
-    background-color: #ff5722;
-    color: #fff;
-    padding: 12px 25px;
+input {
+    height: 40px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 1.1em;
+    background-color: #ffd700; /* Button background color */
+    color: #000; /* Button text color */
+    font-size: 1.2em;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
-button[type="submit"]:hover {
-    background-color: #d84315;
+button:hover {
+    background-color: #ffcc00; /* Button hover background color */
     transform: scale(1.05);
 }
 
-/* Social media links */
-.social-links {
-    margin-top: 30px;
+/* Contact information section styles */
+.contact-info {
+    background-color: #333; /* Dark background for contact info */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #fff; /* Text color */
 }
 
-.social-links a {
-    margin: 0 10px;
+.contact-info h3 {
+    color: #ffd700; /* Section heading color */
     font-size: 1.5em;
-    color: #666;
-    transition: color 0.3s, transform 0.3s;
+    margin-bottom: 10px;
 }
 
-.social-links a:hover {
-    color: #ff5722;
-    transform: translateY(-5px);
+.contact-info p {
+    margin-bottom: 15px;
 }
 
-/* Footer styling */
-footer {
-    background: #1e3c72;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
+/* Social icons styles */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 40px; /* Adjust icon size as needed */
+    height: auto;
+}
+
+/* Google Map embed styles */
+.map {
+    margin-top: 20px;
+}
+
+.map iframe {
     width: 100%;
+    height: 300px; /* Adjust map height as needed */
+    border: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark footer background */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
 
 footer p {
     margin: 0;
-    font-size: 1em;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-    body {
-        padding: 20px;
-    }
-
-    #contact {
-        padding: 20px;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    input, textarea {
-        width: calc(100% - 10px);
-        padding: 10px;
-    }
-
-    button[type="submit"] {
-        padding: 10px 20px;
-        font-size: 1em;
-    }
+    color: #fff; /* Footer text color */
 }
