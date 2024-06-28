@@ -20,10 +20,12 @@ ul {
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 3.5em;
     text-transform: uppercase;
     margin: 0 0 20px;
     color: #fff;
+    font-weight: bold;
+    text-align: center;
 }
 
 h2 span {
@@ -36,6 +38,13 @@ p {
     font-size: 1.2em;
     line-height: 1.5;
     color: #fff;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+strong {
+    font-weight: bold;
 }
 
 /* Rotating Logo */
@@ -106,6 +115,7 @@ p {
     padding: 5px 10px;
     transition: background 0.3s, color 0.3s;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .menu ul li a:hover {
@@ -150,13 +160,7 @@ p {
     max-width: 800px;
     text-align: center;
     z-index: 2;
-}
-
-.content .par {
-    color: #ddd;
-    max-width: 600px;
-    margin: 0 auto 20px;
-    line-height: 1.6;
+    padding: 0 20px;
 }
 
 .cn a {
@@ -165,7 +169,7 @@ p {
     background: #fff;
     color: #000;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: bold;
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
 }
@@ -191,6 +195,7 @@ p {
     font-size: 1.5em;
     margin-bottom: 20px;
     text-align: center;
+    font-weight: bold;
 }
 
 .form input[type="email"],
@@ -211,6 +216,7 @@ p {
     color: #fff;
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
+    font-weight: bold;
 }
 
 .form .btnn a:hover {
@@ -221,29 +227,6 @@ p {
 .form .link a {
     color: #000;
     text-decoration: underline;
-}
-
-/* Scroll-to-Top Button */
-.scroll-top-button {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.scroll-top-button.visible {
-    opacity: 1;
 }
 
 /* Footer */
