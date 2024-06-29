@@ -1,4 +1,4 @@
-/* General styling */
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/* Navbar styling */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -65,7 +65,7 @@ body {
     color: #ffcb05;
 }
 
-/* Search */
+
 .search {
     display: flex;
     align-items: center;
@@ -101,7 +101,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Content styling */
+
 .content {
     text-align: center;
     padding: 60px 20px;
@@ -152,7 +152,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Form styling */
+
 .form {
     background: rgba(46, 58, 89, 0.9);
     padding: 30px;
@@ -234,7 +234,7 @@ body {
     color: #f4f4f4;
 }
 
-/* Footer styling */
+
 footer {
     background: rgba(30, 60, 114, 0.8);
     color: #fff;
