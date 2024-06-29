@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="ICON.png" class="rotating">
     <style>
-        /* Define the keyframes for the rotating animation */
         @keyframes rotate {
             from {
                 transform: rotate(0deg);
@@ -17,12 +16,10 @@
             }
         }
 
-        /* Apply the animation to the rotating class */
         .rotating {
             animation: rotate 4s linear infinite;
         }
 
-        /* Main background image styling */
         .main {
             background: url('bg1.jpeg') no-repeat center center/cover;
             position: relative;
@@ -39,7 +36,6 @@
             z-index: 2;
         }
 
-        /* Add a dark overlay for better text visibility */
         .main::before {
             content: '';
             position: absolute;
@@ -47,11 +43,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+            background: rgba(0, 0, 0, 0.5);
             z-index: 1;
         }
 
-        /* Navigation Bar */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -64,7 +59,7 @@
         .logo img {
             width: 100px;
             height: auto;
-            animation: none; /* Disable logo rotation in the navbar */
+            animation: none;
         }
 
         .menu ul {
@@ -117,7 +112,6 @@
             color: #fff;
         }
 
-        /* Content */
         .content {
             max-width: 800px;
             margin: 0 auto;
@@ -161,7 +155,6 @@
             color: #fff;
         }
 
-        /* Form */
         .form {
             max-width: 300px;
             margin: 0 auto;
@@ -209,7 +202,6 @@
             text-decoration: underline;
         }
 
-        /* Footer */
         footer {
             background: #333;
             color: #fff;
@@ -257,7 +249,7 @@
     </div>
     <footer>
         <div class="container">
-            <p>&copy; 2022 bRAND Express Pvt. Ltd. All Rights Reserved.</p>
+            <p>&copy; 2022 BRAND Express Pvt. Ltd. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
