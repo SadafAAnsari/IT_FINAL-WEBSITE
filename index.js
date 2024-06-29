@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Smooth Scrolling for Navigation
+   
     document.querySelectorAll('.menu a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Form Validation
+    
     const form = document.querySelector('.form');
     const emailInput = form.querySelector('input[type="email"]');
     const passwordInput = form.querySelector('input[type="password"]');
@@ -45,12 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function validateEmail(email) {
-        // Simple email regex validation
+      
         const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         return re.test(email);
     }
 
-    // Scroll-to-Top Button
+   
     const scrollTopButton = document.createElement('button');
     scrollTopButton.textContent = '↑';
     scrollTopButton.classList.add('scroll-top-button');
