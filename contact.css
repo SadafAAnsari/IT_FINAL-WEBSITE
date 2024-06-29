@@ -1,10 +1,10 @@
-/* Reset and general styles */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: aqua; /* Adjust background color as needed */
-    color: #fff; /* Text color for contrast */
+    background-color: aqua; 
+    color: #fff; 
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f8f8f8; /* Light background for form section */
+    background-color: #f8f8f8; 
 }
 
 .container form {
@@ -27,14 +27,14 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: left; /* Form content alignment */
+    text-align: left;
 }
 
 form h2 {
     font-size: 2em;
     margin-bottom: 20px;
     font-family: 'Georgia', serif;
-    color: #f8f8f8; /* Heading color */
+    color: #f8f8f8; 
 }
 
 .form-group {
@@ -45,7 +45,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #ffd700; /* Label color */
+    color: #ffd700;
 }
 
 input, textarea {
@@ -70,29 +70,29 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #ffd700; /* Button background color */
-    color: #000; /* Button text color */
+    background-color: #ffd700; 
+    color: #000; 
     font-size: 1.2em;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
-    background-color: #ffcc00; /* Button hover background color */
+    background-color: #ffcc00; 
     transform: scale(1.05);
 }
 
-/* Contact information section styles */
+
 .contact-info {
-    background-color: #333; /* Dark background for contact info */
+    background-color: #333; 
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
-    color: #fff; /* Text color */
+    color: #fff; 
 }
 
 .contact-info h3 {
-    color: #ffd700; /* Section heading color */
+    color: #ffd700; 
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -101,7 +101,6 @@ button:hover {
     margin-bottom: 15px;
 }
 
-/* Social icons styles */
 .social-icons {
     margin-top: 10px;
 }
@@ -112,24 +111,24 @@ button:hover {
 }
 
 .social-icons img {
-    width: 40px; /* Adjust icon size as needed */
+    width: 40px; 
     height: auto;
 }
 
-/* Google Map embed styles */
+
 .map {
     margin-top: 20px;
 }
 
 .map iframe {
     width: 100%;
-    height: 300px; /* Adjust map height as needed */
+    height: 300px; 
     border: none;
 }
 
-/* Footer styles */
+
 footer {
-    background-color: #333; /* Dark footer background */
+    background-color: #333;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
