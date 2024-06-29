@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -7,14 +7,13 @@ body {
     background: #f5f5f5;
 }
 
-/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Header */
+
 header {
     background: #000;
     color: #fff;
@@ -28,7 +27,7 @@ header h1 {
     margin: 0;
 }
 
-/* Section Styles */
+
 section {
     padding: 60px 0;
     background: #fff;
@@ -48,13 +47,13 @@ section p {
     text-align: center;
 }
 
-/* Mission Section */
+
 .mission {
     background: #fff;
     color: #000;
 }
 
-/* History Section */
+
 .history {
     background: #f9f9f9;
 }
@@ -77,7 +76,7 @@ section p {
     margin: 10px;
 }
 
-/* Founder Section */
+
 .founder {
     background: #fff;
     display: flex;
@@ -111,7 +110,7 @@ section p {
     border-radius: 10px;
 }
 
-/* Products Section */
+
 .products {
     background: #f9f9f9;
 }
@@ -181,7 +180,7 @@ section p {
     color: #000;
 }
 
-/* Footer */
+
 footer {
     background: #333;
     color: #fff;
