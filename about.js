@@ -1,4 +1,4 @@
-// JavaScript for interactive timeline
+
 document.addEventListener('DOMContentLoaded', function () {
     const timelineItems = document.querySelectorAll('.timeline-item');
     timelineItems.forEach(item => {
